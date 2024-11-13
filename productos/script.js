@@ -13,3 +13,11 @@ if (close) {
         nav.classList.remove('active');
     })
 }
+
+let botones = document.querySelectorAll("button");
+
+botones.forEach(boton => {
+  boton.addEventListener("click", function() {
+    window.location.href = "error.html";
+  });
+});

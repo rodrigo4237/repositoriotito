@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".form-box").addEventListener("submit", function(event) {
         event.preventDefault(); 
         
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
 
-        var validUsername = "usuario@gmail.com";
-        var validPassword = "123456";
+        const validUsername = "usuario@gmail.com";
+        const validPassword = "123456";
 
         if (username === validUsername && password === validPassword) {
             alert("Inicio de sesión exitoso.");
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-var showPassword = document.getElementById("showPassword");
-var passwordField = document.getElementById("password");
+const showPassword = document.getElementById("showPassword");
+const passwordField = document.getElementById("password");
 
 showPassword.addEventListener("change", function() {
     if (showPassword.checked) {
