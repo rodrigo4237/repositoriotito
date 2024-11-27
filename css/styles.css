@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Spartan', sans-serif;
+    scrollbar-width:none;
 }
 
 h1 {
@@ -207,6 +208,7 @@ body {
 
 #product1 {
     text-align: center;
+    text-decoration: none;
 }
 
 #product1 .pro-container {
@@ -214,6 +216,7 @@ body {
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
 #product1 .pro {
@@ -227,6 +230,7 @@ body {
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
+    text-decoration: none;
 }
 
 #product1 .pro:hover {
@@ -241,17 +245,20 @@ body {
 #product1 .pro .des {
     text-align: start;
     padding: 10px 0;
+    text-decoration: none;
 }
 
 #product1 .pro .des span {
     color: #606063;
     font-size: 12px;
+    text-decoration: none;
 }
 
 #product1 .pro .des h5 {
     padding-top: 7px;
     color: #1a1a1a;
     font-size: 14px;
+    text-decoration: none;
 }
 
 #product1 .pro .des i {
@@ -264,6 +271,7 @@ body {
     font-size: 15px;
     font-weight: 700;
     color: #088178;
+    text-decoration: none;
 }
 
 #product .pro .cart {
@@ -713,6 +721,128 @@ header {
     transition: .3s ease;
 }
 
+#product-form {
+    background-color: #e2e9e1;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#product-form label {
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"] {
+    background-color: #f7f7f7;
+    border: none;
+    color: #1a1a1a;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#submit-button {
+    background-color: #088178;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #05615b;
+}
+
+.star {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.product {
+    width: 100%;
+    width: 300px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    text-decoration: none;
+}
+
+.product span {
+    color: #606063;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product h5 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 7px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.product-table {
+    width: 100%;
+    background-color: #e2e9e1;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #a8a8a8;
+    padding: 10px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.product-table th {
+    background-color: #088178;
+    font-weight: bold;
+}
+
+.product-table td img {
+    width: 50px;
+    height: auto;
+}
+
 @media (max-width: 799px) {
     .section-p1 {
         padding: 40px 40px;
@@ -801,6 +931,7 @@ header {
         width: 100%;
         height: 420px;
         left: 0px;
+        
     }
     .login-cont {
         left: 0px;
@@ -842,5 +973,28 @@ header {
     }
     #error a {
         left: 80px;
+    }
+    .form-container2 {
+        padding: 30px;
+    }
+    .form-container2 form {
+        width: 100%;
+    }
+    #page-header2 h2 {
+    position: relative;
+    top: 10px;
+    }
+
+    .product-table{
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+    }
+    #cart {
+        width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
     }
 }

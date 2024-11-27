@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Spartan', sans-serif;
+    scrollbar-width:none;
 }
 
 h1 {
@@ -143,6 +144,10 @@ footer .follow i:hover {
     border-radius: 10px;
 }
 
+#product-image {
+    width: 100%;
+}
+
 #prodetails {
     display: flex;
     margin-top: 20px;
@@ -214,9 +219,14 @@ footer .follow i:hover {
 }
 
 .og-price {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 10px;
     color: #1a1a1a;
+    left: 0px;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .whatsapp-link {
@@ -237,7 +247,7 @@ footer .follow i:hover {
     object-fit: cover;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 477px) {
     .section-p1 {
         padding: 40px 40px;
     }
@@ -283,65 +293,6 @@ footer .follow i:hover {
     #lg-bag{
         display: none;
     }
-    #hero {
-        height: 70vh;
-        padding: 0 80px;
-        background-position: top 30% right 30%;
-    }
-    #feature {
-        justify-content: center;
-    }
-    #feature .fe-box {
-        margin: 15px 15px;
-    }
-    #product1 .pro-container {
-        justify-content: center;
-    }
-    #product1 .pro {
-        margin: 15px;
-    }
-    #page-header {
-        background-size: 140%;
-        padding: 0 80px;
-        height: 30vh;
-        background-position: top 120px right 50%; 
-    }
-    #page-header2 {
-        background-size: 230%;
-        padding: 0 80px;
-        height: 30vh;
-        background-position: top 20% right 78%; 
-    }
-    #subtotal {
-        width: 100%;
-    }
-    #cart table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: fixed;
-        white-space: nowrap;
-    }
-    .form-box {
-        width: 100%;
-        height: 420px;
-        left: 0px;
-    }
-    .login-cont {
-        left: 0px;
-        width: 100%;
-    }
-    .form-box2 {
-        width: 100%;
-        height: 420px;
-        left: 0px;
-    }
-    .register-cont {
-        left: 0px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 477px) {
     .section-p1 {
         padding: 20px;
     }

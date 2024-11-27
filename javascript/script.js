@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (username === validUsername && password === validPassword) {
             alert("Inicio de sesión exitoso.");
             
-            window.location.href = "/index.html";
+            window.location.href = "/administrador.html";
         } else {
             alert("Email o contraseña incorrectos.");
         }
